@@ -1,3 +1,7 @@
+### Code file: `data_extraction.ipynb`
+### Output file: `final_output_file.xlsx`
+
+
 Trial 1:
 
 - Initial thoughts: The PDF is uneditable - but realised later that it's a photo PDF
