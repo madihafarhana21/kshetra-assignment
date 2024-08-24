@@ -1,19 +1,19 @@
-### Code file: `data_extraction.ipynb`
-### Output file: `final_output_file.xlsx`
+**Code file:** `data_extraction.ipynb`
+**Output file:** `final_output_file.xlsx`
 
 
-Trial 1:
+### Trial 1:
 
 - Initial thoughts: The PDF is uneditable - but realised later that it's a photo PDF
 - Tried extracting the text from the whole document at once - did not work out
 
-Trial 2: 
+### Trial 2: 
 
 - Tried using pytesseract on the whole document again, but the text extraction wasn't accurate/proper
 
-Trial 3:
+### Trial 3:
 
-Enhancing and Extracting Text:
+#### Enhancing and Extracting Text:
 
 - Converting each page of the PDF to photos (.png) and saving them as separate pages
 - enhancing each photo (sharpening and enhancing the contrast), so that 
@@ -22,7 +22,7 @@ Enhancing and Extracting Text:
 - Defining the ROIs (region of interests) for part_s_no, epic_no, name, relative_name, and one for house_no, age, and gender
 - using pytesseract to extract the text from these defined ROIs for each page in the 'pages' directory
 
-Preprocessing the text:
+#### Preprocessing the text:
 
 - looping through each ROI and using regex
 - for part_s_no, (the deleted entries) have alphabets like (E/S followed by a number),
@@ -34,14 +34,14 @@ Preprocessing the text:
 - for house_no, applying regex to match the pattern and handling the entries
      based on an empty string, -, and other string (entries)
 
-Final process:
+#### Final process:
 
 - appending the processed data into a Pandas DataFrame
 - saving the final excel file
 
 ----------------------------------------------------------------------------------------------------------
 
-CASES YET TO BE HANDLED:
+### CASES YET TO BE HANDLED:
 
 1. Part S.No yet to be handled for the deleted entries and updating the index numbers
 
@@ -58,7 +58,7 @@ CASES YET TO BE HANDLED:
 
 ------------------------------------------------------------------------------------------------------------
 
-MY LEARNINGS - AREAS TO FOCUS ON:
+### MY LEARNINGS - AREAS TO FOCUS ON:
 
 1. Learning how to properly use regex - practice and try out - intermediate to advance expressions if possible
 
